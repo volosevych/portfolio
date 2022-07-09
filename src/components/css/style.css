@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0 !important;
+}
+
+h1, h2, h3 {
+  margin: 0 !important;
+}
+
+:root {
+  --primary-color: #58FFD4;
+  --background-color: #0A192F;
+  --title-color: #CCD6F6;
+  --text-color: #8892B0;
+  --opacity-color: #64ffdb50;
+  --card-background: #203046;
+  --purple: #c95bf5;
+  --white: #fff;
+  --main-font-size: 16px;
+  --small-font-size: 32px;
+  --big-font-size: 50px;
+  --main-font-family: 'Poppins', sans-serif;
+  --cursive-font-family: 'Caveat', cursive;
+}
+
+@-webkit-keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  30% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  40% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  30% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  40% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: var(--background-color);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.navbar {
+  background-color: var(--background-color);
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  font-family: var(--cursive-font-family);
+  font-size: var(--small-font-size) !important;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color) !important;
+  -webkit-animation: 1s wave-animation;
+          animation: 1s wave-animation;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link span {
+  color: var(--primary-color);
+}
+
+.navbar .navbar-nav .dropdown {
+  display: none;
+}
+
+.header__background {
+  height: 100vh;
+}
+
+.header__intro {
+  color: #fff;
+  z-index: 100;
+  padding-top: 200px;
+}
+
+.header__intro h2 {
+  font-size: var(--small-font-size);
+}
+
+.header__intro h1 {
+  padding: 20px 0 20px 0;
+}
+
+.header__intro h1, .header__intro-lastname {
+  font-size: var(--big-font-size);
+}
+
+.header__intro .header__intro-lastname {
+  color: var(--title-color);
+}
+
+.header__intro-typed span {
+  font-size: var(--small-font-size);
+}
+
+.header__intro .header__intro-hand {
+  padding-left: 10px;
+  -webkit-animation: 2.5s wave-animation infinite;
+          animation: 2.5s wave-animation infinite;
+  display: inline-block;
+}
+
+.header__intro .header__intro-hand svg {
+  height: 34px;
+  width: 40px;
+  color: var(--title-color);
+}
+
+.header__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  width: 500px;
+  height: 500px;
+}
+
+.footer {
+  border-top: 1px solid var(--primary-color);
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 2% 8%;
+}
+
+.footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--white);
+}
+
+.footer__text a {
+  padding-left: 10px;
+}
+
+.about-me {
+  background-color: var(--background-color);
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.about-me__intro h2 {
+  padding-bottom: 50px;
+  color: var(--white);
+}
+
+.about-me__intro h2, .about-me__intro h2 span {
+  font-size: var(--small-font-size);
+}
+
+.about-me__intro p {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.socials__text {
+  color: var(--white);
+}
+/*# sourceMappingURL=style.css.map */

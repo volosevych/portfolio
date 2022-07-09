@@ -1,0 +1,50 @@
+.header__background{
+    height: 100vh;
+}
+
+.header__intro {
+    color: #fff;
+    z-index: 100;
+    padding-top: 200px;
+}
+
+.header__intro h2{
+    font-size: var(--small-font-size);
+}
+
+.header__intro h1 {
+    padding: 20px 0 20px 0;
+}
+
+.header__intro h1, .header__intro-lastname{
+    font-size: var(--big-font-size);
+}
+
+.header__intro .header__intro-lastname {
+    color: var(--title-color);
+}
+
+.header__intro-typed span{
+    font-size: var(--small-font-size);
+}
+
+.header__intro .header__intro-hand {
+    padding-left: 10px;
+    animation: 2.5s wave-animation infinite;
+    display: inline-block;
+}
+
+.header__intro .header__intro-hand svg{
+    height: 34px;
+    width: 40px;
+    color: var(--title-color);
+}
+
+.header__img {
+    display: flex;
+    float: right;
+    
+
+    width: 500px;
+    height: 500px;
+}

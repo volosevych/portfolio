@@ -1,0 +1,33 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root {
+    // Colors
+    --primary-color: #58FFD4;
+    --background-color: #0A192F;
+    --title-color: #CCD6F6;
+    --text-color: #8892B0;
+    --opacity-color: #64ffdb50;
+    --card-background: #203046;
+    --purple: #c95bf5;
+    --white: #fff;
+
+    // Fonts
+    --main-font-size: 16px;
+    --small-font-size: 32px;
+    --big-font-size: 50px;
+    --main-font-family: 'Poppins', sans-serif;
+    --cursive-font-family: 'Caveat', cursive;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}

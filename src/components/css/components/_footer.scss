@@ -1,0 +1,16 @@
+.footer {
+    border-top: 1px solid var(--primary-color);
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 2% 8%;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+.footer__text a {
+    padding-left: 10px;
+}
