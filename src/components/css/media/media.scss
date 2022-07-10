@@ -4,9 +4,12 @@
         .navbar-burger,
         .navbar-burger::before,
         .navbar-burger::after {
-            position: absolute;
             display: block;
-            right: 9px;
+        }
+
+        .navbar-burger {
+            position: absolute;
+            right: 40px;
         }
 
         .showMenu {
@@ -22,10 +25,8 @@
             width: 100%;
             height: 100vh;
             opacity: 95%;
-
-            transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-
+            
+            transition: all .6s ease-out;
 
             .nav-link {
                 text-align: center;

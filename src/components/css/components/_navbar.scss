@@ -1,5 +1,10 @@
 .navbar {
     background-color: var(--background-color);
+    transition: all ease-out .5s;
+}
+
+.active {
+    box-shadow: 0px 12px 26px 6px rgba(0,0,0,0.64);
 }
 
 .navbar-brand {
@@ -34,13 +39,12 @@
 .navbar-burger,
 .navbar-burger::before,
 .navbar-burger::after {
+    position: absolute;
     cursor: pointer;
     display: none;
     background-color: var(--title-color);
-    position: absolute;
     height: 4px;
     width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
 }
 

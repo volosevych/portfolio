@@ -2,8 +2,20 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .socials__text {
     color: var(--white);
+
+    p {
+        padding: 10px 0;
+    }
+}
+
+.socials__links {
+    
+    a {
+        color: var(--white);
+    }
 }
