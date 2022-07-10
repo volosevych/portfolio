@@ -13,8 +13,7 @@ const Socials = () => {
 
             <div className="socials__links">
                 <a href="#home"><FaInstagram/></a>
-                <a href="#home"></a>
-                <a href="#home"></a>
+                
             </div>
         </div>
     </section>

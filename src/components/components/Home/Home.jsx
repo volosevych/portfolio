@@ -4,9 +4,6 @@ import '../../css/style.scss';
 import NET from 'vanta/dist/vanta.net.min';
 import { FaHandSparkles } from 'react-icons/fa';
 
-// img
-import homeImg from '../../assets/img/home-main.svg';
-
 // Content for react-typed line
 const textLines = ['Front-End Developer', 'React Developer', 'Junior Software Developer', 'Nice Person :)']
 

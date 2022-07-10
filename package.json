@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://volosevych.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -26,6 +27,8 @@
   "scripts": {
     "start": "react-scripts start npm-run-all copy --parallel watch serve",
     "build": "react-scripts build npm-run-all copy:html build:*",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:sass": "sass  --no-source-map src/sass:public/css",
@@ -34,8 +37,7 @@
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch": "npm-run-all --parallel watch:*",
-    "serve": "browser-sync start --server public --files public",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+    "serve": "browser-sync start --server public --files public"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.49.9"
   }
 }
