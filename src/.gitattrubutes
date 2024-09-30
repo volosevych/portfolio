@@ -1,0 +1,18 @@
+# Normalize all text files to LF in the repository
+* text=auto
+
+# Ensure that specific file types (e.g., CSS, HTML, JavaScript) use LF
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+
+# Handle other specific file types like JSON, Markdown, etc.
+*.json text eol=lf
+*.md text eol=lf
+
+# Binary files should not be normalized (images, fonts, etc.)
+*.png binary
+*.jpg binary
+*.gif binary
+*.woff binary
+*.ttf binary
