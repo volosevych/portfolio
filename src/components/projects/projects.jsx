@@ -57,7 +57,7 @@ const MyProjects = () => {
       </div>
     </div>
 
-    <div className="project-mobile">
+    <div className="project-mobile" id="projects">
       <div className="container">
 
 
