@@ -57,8 +57,8 @@ const MyProjects = () => {
       </div>
     </div>
 
-    <div className="project-mobile" id="projects">
-      <div className="container">
+    <div className="project-mobile">
+      <div className="container" id="projects">
 
 
       <div className="projects-title">
