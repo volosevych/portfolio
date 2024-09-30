@@ -1,0 +1,96 @@
+.socials {
+    position: fixed; 
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 2000px;
+
+    margin: 0 auto;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        position: relative; 
+        gap: 20px;
+        
+        a {
+            
+            color: var(--gray);
+            font-size: 25px;
+            position: relative; 
+            transition: top 0.3s linear, color 0.3s linear;
+            padding-left: 30px;
+
+            &:hover {
+                color: var(--green);
+                
+            }
+        }
+
+        a:last-of-type::after {
+            content: '';
+            position: absolute;
+            top: 80px; 
+            left: 43px;
+            width: 1px; 
+            height: 160px; 
+            background-color: var(--gray); 
+        }
+    }
+
+
+        .social-email {
+            display: inline-block;
+            transform: rotate(90deg);
+            font-size: 14px;
+            color: var(--gray);
+            position: relative; 
+            padding-right: 30px;
+        }
+
+        .social-email:hover {
+            color: var(--green);
+            transition: color .5s linear;
+        }
+
+        .social-email::after {
+            content: '';
+            position: absolute;
+            top: -70px; 
+            left: 280px; 
+            width: 1px;
+            height: 160px;
+            background-color: var(--gray);
+            transform: rotate(90deg);
+        }
+    
+.notation {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: -50px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        color: var(--gray);
+        font-size: 12px;
+
+        span {
+            color: var(--green);
+        }
+    }
+
+}

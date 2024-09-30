@@ -1,0 +1,150 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 120px 0;
+
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .projects-title {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    color: var(--maincolor);
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 400px;
+
+      border: 0.5px solid var(--maincolor);
+      width: 30%;
+    }
+
+    span {
+      color: var(--green);
+      font-size: 26px;
+      margin-right: 10px;
+    }
+  }
+
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .projects-image {
+    width: 100%;
+    max-width: 580px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .projects-description {
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translate(0, -50%);
+    padding: 20px;
+    width: 60%;
+    color: var(--maincolor);
+    z-index: 2;
+    text-align: end;
+
+    .projects-suptitle {
+      color: var(--green);
+      font-size: 13px;
+      margin: 10px 0;
+    }
+
+    .projects-name {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: var(--maincolor);
+    }
+
+    .projects-text {
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid var(--projectbox);
+      background-color: var(--projectbox);
+      padding: 20px;
+    }
+
+    .projects-tags {
+      display: flex;
+      gap: 10px;
+      justify-content: end;
+    }
+
+    .projects-links {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      margin-top: 15px;
+      font-size: 20px;
+
+      a {
+        color: var(--maincolor);
+        transition: color 0.3s ease; 
+
+        &:hover {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}
+
+.project-flip {
+  flex-direction: row-reverse; /* Flip the layout */
+  
+  .projects-description {
+    text-align: start; /* Align the text to the right */
+
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    padding: 20px;
+    width: 60%;
+    color: var(--maincolor);
+    z-index: 2;
+    
+  }
+
+  .projects-tags {
+    display: flex;
+    gap: 10px;
+    justify-content: start !important;
+  }
+
+  .projects-links {
+    display: flex;
+    justify-content: start !important;
+  }
+}
