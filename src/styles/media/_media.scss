@@ -139,9 +139,10 @@
                 width: 100%;
                 max-width: 580px;
 
-                margin-bottom: 30px;
-
                 z-index: 1;
+                overflow: hidden;
+
+                margin-bottom: 30px;
                 img {
                     width: 100%;
                     height: auto;
@@ -158,12 +159,18 @@
                     background-color: var(--navy-shadow);
 
                     color: #fff;
+                    box-sizing: border-box;
+                    padding: 20px;
+
+                    
 
                     .project-mobile__wrapper {
                         display: flex;
                         flex-direction: column;
                         justify-content: start;
-                        padding: 50px 40px;
+                        padding: 20px;
+                        height: 85%;
+                        overflow-y: auto;
 
                         .suptitle {
                             font-size: 14px;
@@ -241,6 +248,16 @@
     }
 }
 
+// SAY HELLO //
+@media (max-width: 768px) {
+    .sayHello {
+        padding: 0 15px;
+        .sayHello-getInTouch {
+            font-size: 30px;
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .socials-mobile {
         display: none;
@@ -252,5 +269,42 @@
     .notation {
         position: relative;
         top: 20px;
+    }
+}
+
+// Navigation for 576px //
+@media (max-width: 576px) {
+    // INTRODUCTION //
+    .introduction {
+        padding: 0 30px;
+        text-align: center;
+
+        .introduction-hi {
+            font-size: 12px;
+        }
+        .introduction-name {
+            font-size: 25px;
+        }
+        .introduction-title {
+            font-size: 25px;
+        }
+
+        .introduction-text {
+            font-size: 12px;
+        }
+    }
+
+    // ABOUT ME //
+    .aboutme {
+        padding: 0 30px;
+    }
+
+    // PROJECTS //
+    .project-mobile {
+        padding: 0 5px;
+
+        .project-mobile__wrapper {
+            
+        }
     }
 }

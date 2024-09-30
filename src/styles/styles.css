@@ -117,8 +117,9 @@
     position: relative;
     width: 100%;
     max-width: 580px;
-    margin-bottom: 30px;
     z-index: 1;
+    overflow: hidden;
+    margin-bottom: 30px;
   }
   .project-mobile .project-mobile__image img {
     width: 100%;
@@ -133,12 +134,16 @@
     z-index: 2000;
     background-color: var(--navy-shadow);
     color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
   }
   .project-mobile .project-mobile__image .project-mobile__content .project-mobile__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 50px 40px;
+    padding: 20px;
+    height: 85%;
+    overflow-y: auto;
   }
   .project-mobile .project-mobile__image .project-mobile__content .project-mobile__wrapper .suptitle {
     font-size: 14px;
@@ -198,6 +203,14 @@
     font-size: 22px;
   }
 }
+@media (max-width: 768px) {
+  .sayHello {
+    padding: 0 15px;
+  }
+  .sayHello .sayHello-getInTouch {
+    font-size: 30px;
+  }
+}
 @media (min-width: 768px) {
   .socials-mobile {
     display: none;
@@ -207,5 +220,29 @@
   .notation {
     position: relative;
     top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .introduction {
+    padding: 0 30px;
+    text-align: center;
+  }
+  .introduction .introduction-hi {
+    font-size: 12px;
+  }
+  .introduction .introduction-name {
+    font-size: 25px;
+  }
+  .introduction .introduction-title {
+    font-size: 25px;
+  }
+  .introduction .introduction-text {
+    font-size: 12px;
+  }
+  .aboutme {
+    padding: 0 30px;
+  }
+  .project-mobile {
+    padding: 0 5px;
   }
 }/*# sourceMappingURL=styles.css.map */

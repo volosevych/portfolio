@@ -56,7 +56,6 @@ const Navigation = () => {
                             spy={true}
                             smooth={true}
                             duration={-70}
-                            duration={500}
                             onClick={() => setIsOpen(false)}
                         >
                             <span>0.1</span> About
@@ -68,7 +67,7 @@ const Navigation = () => {
                                 spy={true}
                                 smooth={true}
                                 duration={-70}
-                                duration={500}
+                                
                                 onClick={() => setIsOpen(false)}
                             >
                                 <span>0.2</span> Projects
@@ -80,7 +79,7 @@ const Navigation = () => {
                                 spy={true}
                                 smooth={true}
                                 duration={-70}
-                                duration={500}
+                                
                                 onClick={() => setIsOpen(false)}
                             >
                                 <span>0.3</span> Contact
