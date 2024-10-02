@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 import resume from '../../assets/resume/Resume.pdf';
 
 const Navigation = () => {
@@ -8,6 +8,15 @@ const Navigation = () => {
     const toggleNavbar = () => {
         setIsOpen(!isOpen)
     };
+
+    const scrollToSection = (descktopId, mobileId) => {
+        const targetId = window.innerWidth <= 768 ? mobileId : descktopId;
+        scroller.scrollTo(targetId, {
+            smooth: true,
+            duration: 500,
+        });
+        setIsOpen(false);
+    }
 
   return (
     <header className='header'>
@@ -62,16 +71,12 @@ const Navigation = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link className='link'
-                                to="projects"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                
-                                onClick={() => setIsOpen(false)}
-                            >
-                                <span>0.2</span> Projects
-                            </Link>
+                        <a
+                            className='link'
+                            onClick={() => scrollToSection('projects-desktop', 'projects-mobile')}
+                        >
+                            <span>0.2</span> Projects
+                        </a>
                     </li>
                     <li>
                         <Link className='link'

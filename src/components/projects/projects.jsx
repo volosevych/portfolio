@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const MyProjects = () => {
   return (
     <>
-    <div className="projects" id="projects">
+    <div className="projects" id="projects-desktop">
       <div className="container">
         
           <div className="projects-title">
@@ -57,8 +57,8 @@ const MyProjects = () => {
       </div>
     </div>
 
-    <div className="project-mobile">
-      <div className="container" id="projects">
+    <div className="project-mobile" id="projects-mobile">
+      <div className="container" >
 
 
       <div className="projects-title">
