@@ -14,10 +14,10 @@ export const projects = [
     {
         image: project2, 
         suptitle: "Featured Project",
-        name: "Simple University Website",
+        name: "SAAS Landing Page",
         description: "A simple multipage website created using HTML and CSS, where I have been developing more complex CSS animations.",
-        tags: ["PHP", "CSS", "HTML", "JavaScript"],
-        link: ["https://github.com/volosevych/Full-Responsive-Multi-Page-Website?tab=readme-ov-file", "https://volosevych.github.io/Full-Responsive-Multi-Page-Website/"],
+        tags: ["React", "Tailwind CSS", "Vue.js", "CSS Animations"],
+        link: ["https://github.com/volosevych/saas-landing-page", "https://volosevych.github.io/saas-landing-page/"],
     },
     {
         image: project3, 
