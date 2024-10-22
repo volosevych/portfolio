@@ -1,6 +1,7 @@
 import project1 from '../../assets/project-img/project-1.png';
 import project2 from '../../assets/project-img/project-2.png';
 import project3 from '../../assets/project-img/project-3.png';
+import project4 from '../../assets/project-img/project-4.png';
 
 export const projects = [
     {
@@ -26,5 +27,14 @@ export const projects = [
         description: "This website was one of my first projects. I included it here to showcase my progress. It is a simple website using only plain CSS and HTML, with some CSS animations.",
         tags: ["CSS", "HTML", "JavaScript"],
         link: ["https://github.com/volosevych/Website-Layout-?tab=readme-ov-file", "https://volosevych.github.io/Website-Layout-/"],
+    },
+
+    {
+        image: project4,
+        suptitle: 'Featured Project',
+        name: 'Positivus',
+        description: 'I developed this website based on a free Figma design to enhance and showcase my skills.',
+        tags: ['React, Animations, Tailwind CSS'],
+        link: ['https://github.com/volosevych/positivus', 'https://volosevych.github.io/positivus/']
     }
 ]
