@@ -19,7 +19,7 @@
 
 ## Demo
 
-Check out the live verstion here: [Link](https://volosevych.github.io/saas-landing-page/)
+Check out the live verstion here: [Link](https://volosevych.github.io/portfolio/)
 
 ---
 
